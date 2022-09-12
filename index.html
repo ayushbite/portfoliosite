@@ -20,6 +20,14 @@
 </head>
 
 <body>
+    <button style="border-radius:30px;"
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+        <i class='bx bx-arrow-to-top'></i>
+        
+</button>
 
     <!-- navbar start -->
     <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
@@ -37,10 +45,10 @@
                     aria-labelledby="dropdownMenuButton1">
                     <li><a class="dropdown-item" href="#home">Home</a></li>
                     <li><a class="dropdown-item" href="#about">About</a></li>
-                    <li><a class="dropdown-item" href="#">Services</a></li>
-                    <li><a class="dropdown-item" href="#">Portfolio</a></li>
-                    <li><a class="dropdown-item" href="#">Testimonial</a></li>
-                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                    
+                    <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
 
                 </ul>
             </div>
@@ -69,12 +77,13 @@
 
                 </div>
                 <div class="col-md-6 mt-5 mt-md-0 order-md-first">
-                    <p class="text-muted mb-1">hello im</p>
-                    <h2 class="text-danger text-uppercase fs-1 fw-bold">Computer Science gradeafe</h2>
-                    <h3 class="fs-4">ayush yadav</h3>
-                    <p class="mt-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam.
-                    </p>
-                    <a href="#protfolio" class="btn btn-danger px-3 mt-3">mywork</a>
+                    <p class="text-muted mb-1">hello I'm</p>
+                    <h3 class="fs-4">Ayush Yadav</h3>
+                    <h2 class="text-danger text-uppercase fs-1 fw-bold">web developer</h2>
+                    
+                    <!-- <p class="mt-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam.
+                    </p> -->
+                    <a href="#portfolio" class="btn btn-danger px-3 mt-3 text-uppercase">mywork</a>
 
                 </div>
 
@@ -93,7 +102,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 ">
                     <div class="section-title text-center">
-                        <p class='[  heading  heading--3 text-uppercase mb-5 fw-bold]'>ABout</p>
+                        <p class='[  heading  heading--3 text-uppercase mb-5 fw-bold text-uppercase mb-5]'>ABout me</p>
                     </div>
                 </div>
             </div>
@@ -109,82 +118,97 @@
                         <div class="col-sm-4">
                             <div class="skills">
                                 <ul class="ch-grid">
-                                  <li>
-                                      <div class="circle"> 
-                                          <div class="mask half">
-                                              <div class="fill" style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);"></div>
-                                          </div>
-                                          <div class="mask full" style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
-                                              <div class="fill" style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);"></div>
-                                           </div>
-                                           <div class="inside-circle " id="angular"> </div>
-                                          <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png?20160527092314" alt="html icon" class="ch-img" >
-                                          <div class="ch-info">
-                                              <h3>Improving this skill everyday</h3>
-                                              <p>HTML5</p>
-                                          </div>
-                                          </div>
-                                  </li>
-                                  </ul>
-                                  </div>
-                            
-                            
+                                    <li>
+                                        <div class="circle">
+                                            <div class="mask half">
+                                                <div class="fill"
+                                                    style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                                </div>
+                                            </div>
+                                            <div class="mask full"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                                <div class="fill"
+                                                    style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                                </div>
+                                            </div>
+                                            <div class="inside-circle " id="angular"> </div>
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png?20160527092314"
+                                                alt="html icon" class="ch-img">
+                                            <div class="ch-info">
+                                                <h3 class="text-uppercase">proficient in angular</h3>
+                                             
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+
                         </div>
                         <div class="col-sm-4">
                             <div class="skills">
                                 <ul class="ch-grid">
-                                  <li>
-                                      <div class="circle"> 
-                                          <div class="mask half">
-                                              <div class="fill" style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);"></div>
-                                          </div>
-                                          <div class="mask full" style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
-                                              <div class="fill" style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);"></div>
-                                           </div>
-                                           <div class="inside-circle" id="java"> </div>
-                                          <img src="https://www.svgrepo.com/show/303388/java-4-logo.svg" alt="html icon" class="ch-img">
-                                          <div class="ch-info">
-                                              <h3>Improving this skill everyday</h3>
-                                              <p>HTML5</p>
-                                          </div>
-                                          </div>
-                                  </li>
-                                  </ul>
-                                  </div>
+                                    <li>
+                                        <div class="circle">
+                                            <div class="mask half">
+                                                <div class="fill"
+                                                    style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                                </div>
+                                            </div>
+                                            <div class="mask full"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                                <div class="fill"
+                                                    style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                                </div>
+                                            </div>
+                                            <div class="inside-circle" id="java"> </div>
+                                            <img src="https://www.svgrepo.com/show/303388/java-4-logo.svg"
+                                                alt="html icon" class="ch-img">
+                                            <div class="ch-info">
+                                                <h3 class="text-uppercase">proficient in java</h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="skills">
                                 <ul class="ch-grid">
-                                  <li>
-                                      <div class="circle"> 
-                                          <div class="mask half">
-                                              <div class="fill" style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);"></div>
-                                          </div>
-                                          <div class="mask full" style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
-                                              <div class="fill" style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);"></div>
-                                           </div>
-                                           <div class="inside-circle"> </div>
-                                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png?20170401104355" alt="html icon" class="ch-img">
-                                          <div class="ch-info">
-                                              <h3>Improving this skill everyday</h3>
-                                              <p>HTML5</p>
-                                          </div>
-                                          </div>
-                                  </li>
-                                  </ul>
-                                  </div>
+                                    <li>
+                                        <div class="circle">
+                                            <div class="mask half">
+                                                <div class="fill"
+                                                    style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                                </div>
+                                            </div>
+                                            <div class="mask full"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                                <div class="fill"
+                                                    style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                                </div>
+                                            </div>
+                                            <div class=""> </div>
+                                            <img src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
+                                                alt="html icon" class="ch-img">
+                                            <div class="ch-info">
+                                                <h3 class="text-uppercase">proficient in django</h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="col-lg-12 d-flex align-items-center">
-                            <a href="" class="btn btn-danger me-5">download sv</a>
-                            <div class="social-links">
+                            <a href="" class="btn btn-danger me-5 text-uppercase" style="margin: 0% 30%;">download cv</a>
+                            <!-- <div class="social-links">
+                                
                                 <a href="#" class="text-dark me-2"><i class='bx bxl-linkedin'></i></a>
-                                <a href="#" class="text-dark me-2"><i class='bx bxl-linkedin'></i></a>
-                                <a href="#" class="text-dark me-2"><i class='bx bxl-linkedin'></i></a>
-                                <a href="#" class="text-dark me-2"><i class='bx bxl-linkedin'></i></a>
-                            </div>
+                                
+                            </div> -->
                         </div>
 
                     </div>
@@ -192,33 +216,55 @@
                 </div>
 
                 <div class="col-md-6 mt-5 mt-md-0">
-                    <
-                    <div class='education'>
+                    < <div class='education'>
                         <div class='education__heading'>
-                          <h4>Education</h4>
+                            <h4>Education</h4>
                         </div>
                         <div class='education__content'>
-                          <h5>Raghu Engineering college</h5>
-                          <span class='year'>2023</span>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam libero sapiente cumque sed, eum ipsa amet! Recusandae, harum aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aliquid.</p>
+                            <h5>Raghu Engineering College</h5>
+                            <span class='year'>2023</span>
+                            <ul>
+                                <li class="text-uppercase">
+                                    CSE - bachelor of techology
+                                </li>
+                            </ul>
+                            <p>
+                              This engineering discipline covers several
+                                topics related to programming languages, program design, computer hardware
+                                and software development.
+                            </p>
                         </div>
                         <div class='education__content'>
-                          <h5>S v governement polytecnic</h5>
-                          <span class='year'>2020</span>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h5>S V Governement Polytechnic</h5>
+                            <span class='year'>2020</span>
+                            <ul>
+                                <li class="text-uppercase">
+                                    Computer engineering - diploma
+                                </li>
+                            </ul>
+                            <p>
+                                This engineering discipline covers several
+                                  topics related to programming languages, program design, computer hardware
+                                  and software development.
+                              </p>
                         </div>
                         <div class='education__content'>
-                          <h5>kendriya vishklaya medak</h5>
-                          <span class='year'>2017</span>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam libero sapiente cumque sed, eum ipsa amet! Recusandae, harum aut.</p>
+                            <h5>Kendriya Vidhlaya Sangathan</h5>
+                            <span class='year'>2017</span>
+                            <ul>
+                                <li class="text-uppercase">
+                                    10 grade
+                                </li>
+                            </ul>
+                           
                         </div>
-                        
-                      </div>
 
                 </div>
 
-
             </div>
+
+
+        </div>
 
 
         </div>
@@ -250,8 +296,8 @@
                     <div class="portfolio-item">
                         <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png"
                             class="w-100 img-thumbnail" alt="">
-                        <h3 class="text-captalize fs-5 my-2">teamsection</h3>
-                        <p><a href="#" class="text-danger text-decoration-none">click here</a></p>
+                        <h3 class="text-captalize fs-5 my-2">Recipe Management System</h3>
+                        <p><a href="https://github.com/ayushbite/Recipe" target="_blank" class="text-danger text-decoration-none">click here</a></p>
 
                     </div>
                 </div>
@@ -259,8 +305,8 @@
                     <div class="portfolio-item">
                         <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png"
                             class="w-100 img-thumbnail" alt="">
-                        <h3 class="text-captalize fs-5 my-2">teamsection</h3>
-                        <p><a href="#" class="text-danger text-decoration-none">click here</a></p>
+                        <h3 class="text-captalize fs-5 my-2">Employee management System</h3>
+                        <p><a href="https://github.com/ayushbite/employee_management" target="_blank" class="text-danger text-decoration-none">click here</a></p>
 
                     </div>
                 </div>
@@ -268,8 +314,8 @@
                     <div class="portfolio-item">
                         <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png"
                             class="w-100 img-thumbnail" alt="">
-                        <h3 class="text-captalize fs-5 my-2">teamsection</h3>
-                        <p><a href="#" class="text-danger text-decoration-none">click here</a></p>
+                        <h3 class="text-captalize fs-5 my-2">PongGame</h3>
+                        <p><a href="https://github.com/ayushbite/PongGame" target="_blank" class="text-danger text-decoration-none">click here</a></p>
 
                     </div>
                 </div>
@@ -288,9 +334,9 @@
         <div class="container-lg py-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <p class="text-light fs-5">do you have any projects</p>
-                    <h2 class="fs-1 text-white mb-4"> im available for work</h2>
-                    <a href="#contact" class="btn btn-outline-light">Hire ME</a>
+                    <p class="text-light fs-5 text-uppercase">do you have any projects</p>
+                    <h2 class="fs-1 text-white mb-4"> I'm Available For Work</h2>
+                    <a href="#contact" class="btn btn-outline-light text-uppercase">Hire ME</a>
                 </div>
             </div>
         </div>
@@ -313,7 +359,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="col-lg-8 text-center justify-content-center align-content-center">
-                        <p class=" fs-5">Whether you have a question, want to start a project or simply want to connect
+                        <p class=" fs-5 fw-bold">Whether you have a question, want to start a project or simply want to connect
                         </p>
                         <h2 class="fs-5 mb-3">
                             Feel free to send me a message in the contact form</h2>
@@ -333,18 +379,21 @@
                             <i class='bx bx-phone-call'></i>
                         </div>
                         <div class="text ms-3">
-                            <h3 class="fs-5">7386465794</h3>
+                           
+                            <a class="btn btn-primary" href="tel:+917386465794" style="">
+                                Click to Call <span class="glyphicon glyphicon-earphone" style="padding-left:10px; padding-right:10px;"></span>7386465794
+                             </a>
 
                         </div>
                     </div>
                     <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-4 text-success">
-                            <a href="https://web.whatsapp.com/send?phone=917386465794?text=Hello" target="_blank"><i
+                        <div class="icon fs-4 text-success " >
+                            <a class="display-4" style="color: rgb(78, 245, 78);margin-left: 50px; margin-right: 50px;" href="https://web.whatsapp.com/send?phone=917386465794?text=Hello" target="_blank"><i
                                     class='bx bxl-whatsapp'></i></a>
 
                         </div>
                         <div class="icon fs-4 text-success mr-5">
-                            <a href="#" class="me-2"><i class='bx bxl-linkedin'></i></a>
+                            <a href="#" class="me-2 display-4" style="color: #0e76a8;" target="_blank"><i class='bx bxl-linkedin'></i></a>
 
                         </div>
 
@@ -362,18 +411,18 @@
                     </div>
                     <form id="ayushform">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Name:</label>
+                            <label for="exampleInputEmail1" class="form-label fw-bold">Name:</label>
                             <input type="text" class="form-control" id="name" aria-describedby="texthelp">
 
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <label for="exampleInputEmail1" class="form-label fw-bold">Email address:</label>
                             <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
 
                         </div>
 
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message:</label>
                             <textarea class="form-control" id="message" rows="3"></textarea>
                         </div>
 
@@ -389,7 +438,7 @@
 
     <!-- contact me ends -->
 
-  
+
 
 
 
