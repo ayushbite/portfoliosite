@@ -13,6 +13,7 @@
 firebase.initializeApp(firebaseConfig);
 
 // creating reference for database(
+  // if the database not avialble it will created the database evey time
 const contactformdbobject = firebase.database().ref('contactform')
 
 
@@ -27,7 +28,33 @@ function submitform(e){
     var firstname = getElementValue('name');
     var email = getElementValue('email');
     var message = getElementValue('message');
-    console.log(firstname,email,message)
+    save(firstname,email,message);
+
+    // now i'm alerting the message for feedback
+    document.querySelector('.customalert').style.display="block"
+
+    // after 2 second remmoving the alert
+
+    setTimeout(() => {
+      document.querySelector('.customalert').style.display="none"
+    }, 2000);
+
+    //resseting the form
+    document.getElementById('ayushform').reset()
+
+}
+
+//save the message to the firebase
+const save = (firstname,email,message) => {
+  // referance to the db
+  var newcontactform = contactformdbobject.push()
+
+  newcontactform.set({
+    firstname:firstname,
+    email:email,
+    message:message
+
+  })
 
 }
 
@@ -37,3 +64,6 @@ const getElementValue = (id)=>{
     return document.getElementById(id).value;
 
 }
+
+
+
